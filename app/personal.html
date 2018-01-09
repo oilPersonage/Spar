@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Spar</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+<body>
+	<div class="contain__for__footer contain__for__footer-pers">
+		<div class="header__top header__top-reg">
+			<div class="container">
+				<div class="row">
+					<div class="flex flex-pers">
+						<a href="http://localhost:3000" class="header__top__logo display-inline link">
+							<img src="img/logo.png" alt="logotype">
+						</a>
+						<div class="user display-inline user-pers">
+							<p id="top__info">Андрей А.</p>
+							<ul class="list__room" id="menu__info">
+								<li class="item__room "><p class="link tab__top"> Мои данные</p></li>
+								<li class="item__room "><p class="link tab__top"> Мои чеки</p></li>
+								<li class="item__room "><p class="link tab__top"> Мои промо-коды</p></li>
+								<li class="item__room "><p class="link tab__top"> Скачать промо-буклет</p></li>
+								<li class="item__room"><a href="http://localhost:3000" class="link"> Выход</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container conteiner-top">
+				<div class="row">
+					<div class="bread">
+					<ul>
+						<li>Главная</li>
+						<li>Личный кабинет</li>
+					</ul>
+				</div>
+				<div class="room__name">
+					<h1>Личный кабинет</h1>
+					<div class="name">
+						<p>Александров Сергей Вячеславович</p>
+						<a href="localhost:3000" class="out link">Выход</a>
+					</div>
+				</div>
+				<div id="tabs">
+					<div class="tab white" id="myData">Мои данные</div>
+					<div class="tab" id="myCheck">Мои чеки</div>
+					<div class="tab" id="myPromo">Мои промо-коды</div>
+					<div class="tab" id="downPromo">Скачать промобуклет</div>
+				</div>
+				<div class="tabsContent">
+					<div class="tabContent padding-top">
+						<form class="form__my__info">
+							<div class="form__my form__my__info__left">
+									<label for="family">Фамилия</label>
+									<div class="input__block">
+										<input type="text" id="family" placeholder="Александров" disabled><div class="edit"></div>
+									</div>
+									<label for="name">Имя</label>
+									<div class="input__block">
+										<input type="text" id="name" placeholder="Сергей" disabled><div class="edit"></div>
+									</div>
+									<label for="otch">Отчество</label>
+									<div class="input__block ">
+										<input type="text" id="otch" placeholder="Вячеславович" disabled><div class="edit"></div>
+									</div>
+									<label for="tel">Телефон</label>
+									<div class="input__block input__block-padding">
+										<input type="tel" id="tel"><div class="edit edit-red"></div>
+									</div>
+									<p>СМС  рассылка доступна только для абонентов операторов России</p>
+									<div class="checked__group">
+									<input type="checkbox" class="right__checked" checked><span>Я согласен получать персональные уведомления</span><br>
+									</div> 
+									<label for="email">e-mail</label>
+									<div class="input__block">
+										<input type="email" id="email" placeholder="name@domain.ru" disabled><div class="edit"></div>
+									</div>
+							</div>
+							<div class="form__my form__my__info__right">
+								<label for="position">Местоположение</label>
+								<div class="input__block__right">
+									<input type="text" id="position" placeholder="Местоположение не определено">
+									<a href="" class="position__arrow"></a>
+								</div>
+								<label for="day">Дата рождения</label>
+								<div class="bithday__block">
+									<select id="day" class="bithday__one">
+									  <option value="">1</option>
+									  <option value="">2</option>
+									  <option value="">3</option>
+									  <option value="">4</option>
+									  <option value="">5</option>
+									  <option value="">6</option>
+									  <option value="">7</option>
+									  <option value="">8</option>
+									  <option value="">9</option>
+									  <option value="">10</option>
+									  <option value="">11</option>
+									  <option value="">12</option>
+									  <option value="">13</option>
+									  <option value="">14</option>
+									  <option value="">15</option>
+									  <option value="">16</option>
+									  <option value="">17</option>
+									  <option value="">18</option>
+									  <option value="">19</option>
+									  <option value="">20</option>
+									  <option value="">21</option>
+									  <option value="">22</option>
+									  <option value="">23</option>
+									  <option value="">24</option>
+									  <option value="">25</option>
+									  <option value="">26</option>
+									  <option value="">27</option>
+									  <option value="">28</option>
+									  <option value="">29</option>
+									  <option value="">30</option>
+									  <option value="">31</option>
+									</select>
+									<select id="mount" class="bithday__two">
+									  <option>Январь</option>
+									  <option>Февраль</option>
+									  <option>Март</option>
+									  <option>Апрель</option>
+									  <option>Май</option>
+									  <option>Июнь</option>
+									  <option>Июль</option>
+									  <option>Август</option>
+									  <option>Сентябрь</option>
+									  <option>Октябрь</option>
+									  <option>Ноябрь</option>
+									  <option>Декабрь</option>
+									</select>
+									<select id="ear" class="bithday__three">
+									  <option>Пункт 1</option>
+									  <option>Пункт 2</option>
+									</select>
+								</div>
+								<label for="input">Пол</label>
+								<div class="floor">
+									<div class="floor__block">
+										<span class="checked-img"></span>
+										<input type="radio" id="input">
+										<label>Мужской</label>
+									</div>
+									<div class="floor__block floor__block-active">
+										<span class="checked-img"></span>
+										<input type="radio">
+										<label>Женский</label>
+									</div>
+								</div>
+  								<div class="accounts">
+									<div class="account_block">
+										<a href="" class="account-name link">Александров Сергей</a>
+										<a href="" class="account-close account-active"><p></p></a>
+									</div>
+									<div class="account_block">
+  										<a href="" class="account-name link">Привязать аккаунт</a>
+										<a href="" class="account-close"><p></p></a>
+									</div>
+									<div class="account_block">
+										<a href="" class="account-name link">Привязать аккаунт</a>
+										<a href="" class="account-close"><p></p></a>
+									</div>
+  								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tabContent padding">
+						
+						<div class="check__blox">
+							<div class="form__my check__box__left">
+								<table>
+										<tr>
+											<th class="number">Чек №</th>
+											<th class="data__reg">Дата регистрации</th>
+											<th class="status__reg">Статус</th>
+										</tr>
+										<tr>
+											<td class="number__red">12345</td>
+											<td>27.03.2017</td>
+											<td>Победил</td>
+										</tr>
+										<tr>
+											<td class="number__red">12345</td>
+											<td>27.03.2017</td>
+											<td>Не победил</td>
+										</tr>
+										<tr>
+											<td class="number__red">12345</td>
+											<td>27.03.2017</td>
+											<td>В обработке</td>
+										</tr>
+										<tr>
+											<td class="number__red">12345</td>
+											<td>27.03.2017</td>
+											<td class="text-red">Требуется подтверждение позвоните по номеру 8(800)555-07-088 до 25.09.2017</td>
+										</tr>
+								</table>
+								<a href="#" class="link">Загрузить еще</a>
+							</div>
+							<div class="form__my check__box__right">
+								<h3>Добавить новый чек</h3>
+								<p>Введите номер чек, полученного на кассе при покупке мультитула</p>
+								<form class="form">
+									<div class="form__block">
+										<input type="text" placeholder="6 последних цифр номера чека">
+										<button class="button-animation button-media hover">Добавить</button>
+									</div>
+									<p>Как найти номер чека<span><img src="img/how.png" alt=""></a></span></p>
+								</form>
+								
+							</div>
+						</div>
+
+					</div>
+					<div class="tabContent tabContent__padding">
+						<div class="promokod__block promokod__block__pers">
+								<div class="promokod__kod"><img src="img/promo.png" alt=""></div>
+								<div class="email_block">
+									<a href="#" class="promokod__email"></a>
+									<a href="#" class="promokod__print"></a>
+								</div>
+								<p class="promokod__text">Распечатайте и предъявите этот код на кассе
+								магазина Spar, участвующего в акции и купите
+								"Чайник с заварочной колбой" со скидкой 50%
+								</p>
+							</div>
+							<p class="data__promo__kod">Действителен до:<span>28.08.2017</span></p>
+							<div class="promokod__block promokod__block__pers">
+								<div class="promokod__kod"><img src="img/promo.png" alt=""></div>
+								<div class="email_block">
+									<a href="#" class="promokod__email"></a>
+									<a href="#" class="promokod__print"></a>
+								</div>
+								<p class="promokod__text">Распечатайте и предъявите этот код на кассе
+								магазина Spar, участвующего в акции и купите
+								"Чайник с заварочной колбой" со скидкой 50%
+								</p>
+							</div>
+							<p class="data__promo__kod">Действителен до:<span>28.08.2017</span></p>
+							<div class="promokod__block promokod__block__pers">
+								<div class="promokod__kod"><img src="img/promo.png" alt=""></div>
+								<div class="email_block">
+									<a href="#" class="promokod__email"></a>
+									<a href="#" class="promokod__print"></a>
+								</div>
+								<p class="promokod__text">Распечатайте и предъявите этот код на кассе
+								магазина Spar, участвующего в акции и купите
+								"Чайник с заварочной колбой" со скидкой 50%
+								</p>
+							</div>
+							<p class="data__promo__kod">Действителен до:<span>28.08.2017</span></p>
+					</div>
+					<div class="tabContent tabContent__padding">
+						<div class="tabContent__block">
+							<img src="img/receipts.jpg" alt="">
+							<a href="#" class="print__lk"></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	<footer class="footer">	
+			<div class="contain__footer">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="footer__block">
+							<div class="footer__left line">
+								<p><a href="#" class="link">Условия акции</a></p>
+								<p><a href="#" class="link">Политика конфиденциальности</a></p>
+								<p><a href="#" class="link">Политика Cookie</a></p>
+							</div>
+							<div class="footer__middle line">
+								<p>По всем вопросам, касающимся акции:</p>
+								<div class="middle__block">
+									<a href="tel:+78005550788" class="link icon__before">+7 (800) 555-07-88</a>
+									<a href="mailto:promo@spar.ru" class="link icon__before">promo@spar.ru</a>
+								</div>
+							</div>
+							<div class="footer__right">
+								<p>Поделиться с друзьями:</p>
+								<div class="footer__email">
+									<a href="#" class="link"></a>
+									<a href="#" class="link"></a>
+									<a href="#" class="link"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>	
+				</div>
+				<p class="copyright">www.spar.ru</p>
+			</div>
+		</footer>
+	</div>
+	
+</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/pers.min.css">
+	<script src="js/common.reg.js"></script>
+</html>

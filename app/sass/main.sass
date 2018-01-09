@@ -1,0 +1,981 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #333
+	opacity: 1
+
+*:-moz-placeholder
+	color: #333
+	opacity: 1
+
+*::-moz-placeholder
+	color: #333
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #333
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+h2
+	text-transform: uppercase
+	font-size: 34px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: "TeX Gyre Heros"
+	overflow-x: hidden
+	color: #000
+	opacity: 1
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+
+.stock
+	position: relative
+	text-align: center
+	padding: 140px 0 80px 0
+.stock__top
+	position: absolute
+	top: -125px
+	left: 50%
+	transform: translateX(-50%)
+	width: 95%
+	max-width: 1140px
+	background-color: #fff
+	padding: 30px 150px 35px 150px
+	box-shadow: -5px 10px 25px 0px rgba(0,0,0,.5)
+	background-image: url("/img/kettle.png")
+	background-repeat: no-repeat
+	background-size: 15%
+	background-position: 5% 60%
+	&:before
+		content: ''
+		height: 220px
+		width: 240px
+		top: 15%
+		right: 2%
+		background-image: url("/img/kettle.png")
+		background-repeat: no-repeat
+		background-size: 100%
+		position: absolute
+		z-index: 1
+	h2
+		font-size: 32px
+		font-weight: normal
+		margin: 0
+		text-transform: none
+.stock__top__main__block
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 30px 0px 0px 0px
+.stock__block
+	font-size: 22px
+	padding: 0 20px
+	line-height: 22px
+.stock__block-persent
+	margin-right: 20px
+	color: #e4002b
+	font-size: 52px
+	position: relative
+	padding-right: 50px
+	font-weight: bold
+	span
+		position: absolute
+		top: 10%
+		color: #c1c1c1
+		font-size: 33px
+.stock__block-registration
+	background-color: #e4002b
+	display: block
+	padding: 20px 70px
+	z-index: 2
+	overflow: hidden
+	font-weight: 100
+	&:hover
+		color: #fff
+		text-decoration: none
+
+.stock__main
+	h2
+		margin-bottom: 90px
+.item__flex
+	display: flex
+	flex-direction: row
+	align-items: flex-start
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-bottom: 130px
+	.item
+		width: 180px
+		&:nth-child(1)
+			padding-top: 100px
+			.item__text
+				.text-left
+					color: #f8bfca
+		&:nth-child(2)
+			.item__img
+				background-position: -134px 0px
+			.item__text
+				.text-left
+					color: #bfdecc
+		&:nth-child(3)
+			padding-top: 100px
+			.item__img
+				background-position: -268px 0px
+			.item__text
+				.text-left
+					color: #f8bfca
+			.item__text
+				.text-left
+					color: #f8bfca
+		.item__text
+			.text-left
+				font-weight: bold
+		&:nth-child(4)
+			.item__img
+				background-position: -402px 0px
+			.item__text
+				.text-left
+					color: #bfdecc
+		&:nth-child(5)
+			padding-top: 90px
+			.item__img
+				background-position: -536px 0px
+			.item__text
+				.text-left
+					color: #f8bfca
+.item__img
+	margin: 0 auto
+	height: 134px
+	width: 134px
+	background-image: url("/img/sprite.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+
+.item__text
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: center
+	font-size: 14px
+	line-height: 1.3
+.text-left
+	font-size: 60px
+	margin: 0
+.text-right
+	margin-left: 5px
+	span
+		text-decoration: underline
+.text-center
+	padding: 0
+	text-align: center
+// carousel
+
+.surprise__carousel
+	width: 100%
+	height: auto
+	color: #fff
+.owl-carousel
+	box-shadow: -10px 10px 30px 0px rgba(0,0,0,0.5)
+	position: relative
+.owl-prev
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	background-color: #000
+	color: #fff
+	left: 0
+	font-size: 32px
+	display: flex
+	align-items: flex-start
+	line-height: 38px
+	justify-content: center
+	width: 42px
+	height: 42px
+	opacity: 0.7
+	&:hover
+		opacity: 1
+.owl-next
+	position: absolute
+	top: 50%
+	right: 0
+	transform: translateY(-50%)
+	background-color: #000
+	color: #fff
+	font-size: 32px
+	justify-content: center
+	align-items: flex-start
+	line-height: 38px
+	display: flex
+	width: 42px
+	height: 42px
+	opacity: 0.7
+	&:hover
+		opacity: 1
+.owl-dots
+	left: 50%
+	transform: translateX(-50%)
+	position: absolute
+	bottom: -40px
+	display: flex
+	justify-content: center
+.owl-dot
+	background-color: #b2b3b2
+	border-radius: 50%
+	width: 14px
+	height: 14px
+	margin: 3px
+.owl-dots
+	.active
+		background-color: #e4002b
+		box-shadow: inset -1px 1px 1px 1px rgba(#000,.4)
+.product__img
+	.owl-item
+		display: inline-block
+	img
+		width: 100%
+
+.surprise
+	padding: 0px 0px 0px 0
+	background-color: #eeece4
+	display: flex
+	h2
+		line-height: 34px
+		color: #e4002b
+		max-width: 550px
+		margin: 40px auto 30px
+		a
+			color: #e4002b
+			text-transform: uppercase
+.surprise__video
+	overflow: hidden
+	width: 30%
+	padding-right: 30px
+	position: relative
+	.img-contein
+		position: relative
+		width: 100%
+		height: 100%
+		img
+			position: absolute
+			right: 0
+			top: 0
+			width: 100%
+			height: 100%
+	a
+		display: block
+		color: #e4002b
+		font-size: 16px
+		width: 92%
+		text-transform: uppercase
+		padding: 20px 50px
+		line-height: 16px
+		background-color: rgba(#fff,0.5)
+		margin: 0
+		overflow: hidden
+		position: absolute
+		bottom: 11%
+		&:hover
+			.figure
+				z-index: 1
+				left: 100%
+				&:after
+					width: 500px
+					transform: translateX(-500px)
+		p
+			margin: 0
+.figure
+	top: 0
+	left: 0
+	height: 56px
+	position: absolute
+	width: 61px
+	background-color: transparent
+	border: 28px solid #fff
+	border-right: 28px solid transparent
+	border-top: 28px solid transparent
+	border-bottom: 28px solid transparent
+	transition: left 0.4s ease
+	&:after
+		content: ''
+		width: 0px
+		height: 61px
+		position: absolute
+		left: -28px
+		top: -28px
+		background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(125,185,232,0) 25%,rgba(125,185,232,0) 100%)
+.button-animation
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: -220px
+		height: 0px
+		width: 0px
+		right: -150px
+		transition: height 0.4s ease, width 0.4s ease
+		background-color: rgba(#fff,.2)
+		border-radius: 50%
+	&:hover
+		&:after
+			height: 500px
+			width: 500px
+.hover
+	transform: translateY(0px)
+	&:hover
+		transform: translateY(-1px)
+		box-shadow: 0 2px 2px rgba(0,0,0,.5)
+.button-animation-b
+	&:hover
+		&:after
+			height: 1000px
+			width: 1000px
+.surprise__main
+	margin-bottom: 10px
+	width: 70%
+.surprise__text
+	margin: 35px auto 60px
+	font-size: 20px
+	font-weight: bold
+	max-width: 740px
+	color: #e4002b
+	line-height: 1.4
+	text-transform: uppercase
+.contain
+	display: flex
+.surprise__kod
+	display: inline-block
+	width: 50%
+.promokod
+	text-align: left
+	p
+		font-size: 14px
+		line-height: 1.3
+		color: #000
+.promokod__block
+	display: flex
+.promokod__kod
+	box-shadow: inset -1px 1px 2px 1px rgba(0,0,0,0.4)
+	display: inline-block
+	background-color: #FFF
+	padding: 10px
+	width: 80%
+	align-items: center
+	display: flex
+	justify-content: center
+	img
+		width: 100%
+.promokod__email, .promokod__print
+	background-image: url('../img/email.png')
+	margin: 0 auto
+	height: 36px
+	width: 36px
+.promokod__print
+	background-position: 36px 0
+.email_block
+	display: flex
+	flex-direction: column
+	width: 20%
+	justify-content: space-around
+	text-align: center
+	line-height: 42px
+.timer
+	display: inline-block
+	width: 50%
+.timer__p
+	font-size: 22px
+	margin: 0 0 35px 0
+	line-height: 22px
+	color: #e4002b
+.timer__img
+	display: block
+	height: 66px
+	max-width: 76px
+	width: 100%
+	background-color: #FFF
+.timer__text
+	margin-top: 15px
+	color: #e4002b
+.timer__block
+	margin: 0 8px
+	max-width: 76px
+	width: 30%
+.timer__contain
+	display: flex
+	justify-content: center
+
+//sabiries
+
+.sabatier
+	overflow: hidden
+	max-height: 840px
+	background-color: #eeece4
+	.container
+		height: 100%
+		.row
+			height: 100%
+.sabatier__block
+	display: flex
+.sabatier__left
+	padding: 100px 50px 80px 0
+	width: 40%
+	height: 100%
+	h3
+		font-size: 34px
+		line-height: 40px
+		margin: 0 0 45px
+	p
+		font-size: 22px
+		line-height: 1.3
+.sabatier__right
+	overflow: hidden
+	width: 60%
+	min-height: 100%
+	background-image: url('/img/sabatier.jpg')
+	-webkit-background-size: cover
+	background-size: cover
+	background-position: center 0
+/// product
+
+.product__contain
+	text-align: center
+	padding: 100px 0
+	h2
+		margin: 0 auto 50px
+		max-width: 810px
+		line-height: 1
+.product
+	background-color: #eeece4
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: start
+	padding: 40px 0 30px
+	position: relative
+	margin-bottom: 40px
+	&:last-child
+		margin-bottom: 0
+	&:after
+		content: ""
+		position: absolute
+		height: 100%
+		width: 5%
+		top: 0
+		right: 0
+		background-color: #FFF
+	&:before
+		content: ""
+		position: absolute
+		height: 100%
+		top: 0
+		left: 0
+		width: 5%
+		background-color: #FFF
+.product__left
+	width: 30%
+	box-shadow: 0 10px 10px 3px rgba(0,0,0,.5)
+	overflow: hidden
+	z-index: 2
+	position: relative
+.img__video
+	position: absolute
+	bottom: 0
+	right: 0
+	padding: 15px 40px 15px 20px
+	color: #fff
+	background-color: #7fbc99
+	p
+		margin: 0
+		font-size: 12px
+.arrow
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 22px
+		height: 22px
+		top: 0
+		right: -30px
+		border: 11px solid #fff
+		border-top: 11px solid transparent
+		border-bottom: 11px solid transparent
+		border-right: 11px solid transparent
+.product__persent
+	padding: 0
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
+.persent__product
+	margin: 0 20px 20px 0
+	display: inline-block
+.persent__product-font-s
+	font-size: 20px
+	text-decoration: line-through
+.chips
+	display: flex
+.chip
+	width: 47px
+	height: 47px
+	background-image: url("../img/popupfish.png")
+	background-size: cover
+	display: inline-block
+	margin-left: -20px
+	&:nth-child(1)
+		margin-left: -10px
+.persent__product-font-m
+	font-size: 30px
+	color: #e4002b
+.product__right
+	text-align: left
+	padding: 0 40px
+	width: 55%
+	h3
+		margin: 0 0 30px
+		font-size: 34px
+		line-height: 1.2
+		max-width: 450px
+.block__info
+	ul
+		margin: 0
+		padding-left: 20px
+		list-style-type: circle
+.product__persent__right
+	z-index: 2
+	width: 15%
+	color: #fff
+	padding: 0
+	p
+		margin: 0
+		font-size: 16px
+		margin-top: 10px
+	.discount__text
+		margin: 0
+		font-size: 50px
+		line-height: 40px
+		font-weight: 800
+		position: relative
+		padding-right: 30px
+		span
+			position: absolute
+			top: 0
+			right: 0
+			font-weight: 100
+			font-size: 40px
+			width: 40px
+.discount
+	background-color: #e4002b
+	width: 130px
+	float: right
+	padding: 30px 0 20px
+
+
+//// glass
+.glass
+	background-color: #1d2b23
+	text-align: center
+	padding: 70px 15px 100px
+	color: #fff
+	text-transform: uppercase
+	h2
+		line-height: 34px
+		font-weight: 800
+		margin: 0 auto 40px
+	p
+		margin: 0 auto 80px
+		font-size: 24px
+		line-height: 24px
+		text-decoration: underline
+		display: block
+.glass___block
+	height: 440px
+	margin: 0 auto
+	max-width: 780px
+	background-color: #c2c2c2
+
+
+// gifts
+
+.gifts
+	padding: 130px 0 40px
+	text-align: center
+	text-transform: uppercase
+	font-weight: 800
+	background-color: #eeece4
+	h2
+		margin: 0 auto 20px 
+		line-height: 34px
+	p
+		font-size: 24px
+		margin: 0 auto 25px
+.gifts__blocks
+	display: flex
+	margin-bottom: 40px
+	align-items: center
+.black-text
+	color: #000
+.gifts__block-left
+	background-color: #fff
+	box-shadow: -5px 10px 25px 0px rgba(0,0,0,.4)
+	width: 215px
+	height: 215px
+	overflow: hidden
+	position: relative
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: auto
+.gifts__block-middle
+	display: flex
+	flex-direction: column
+	justify-content: center
+	aling-items: center
+	font-size: 20px
+	margin: 0 auto
+	width: 50%
+	padding: 40px 40px 50px 40px
+	text-align: left
+	p
+		line-height: 1.2
+.gift__button
+	text-align: center
+	width: 100%
+	overflow: hidden
+	background-color: #e4002b
+	p
+		margin: 0
+		padding: 12px
+		font-weight: 100
+		font-size: 24px
+.timer-gifts
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 25%
+	text-transform: none
+.form
+	p
+		font-size: 20px
+		text-transform: none
+		font-weight: 100
+		max-width: 900px
+		padding: 0 15px
+		margin: 0 auto 20px
+		position: relative
+		span
+			margin-left: 10px
+			cursor: pointer
+			right: 0
+			&:after
+				cursor: default
+				top: 0px
+				right: 0
+				display: none
+				position: absolute
+				content: 'Написан на обратной стороне чего-то там'
+				padding: 15px 20px
+				background-color: #fff
+				border-radius: 5px
+				transform: translateY(-110%)
+				box-shadow: 0 0px 5px rgba(0,0,0,.5)
+			&:hover
+				&:after
+					display: block
+	.form-left-text
+		text-align: left
+		max-width: 720px
+
+.form__block
+	font-size: 0
+	margin-bottom: 20px
+	margin-top: 1px
+	display: flex
+	align-items: flex-end
+	justify-content: center
+	input
+		width: 100%
+		max-width: 500px
+		padding: 10px 15px
+		border: none
+		box-sizing: content-box
+		font-weight: 100
+		font-size: 16px
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,.5)
+.form__button
+	font-size: 20px
+	padding: 6px 15px 7px
+	border: none
+	background-color: #e4002b
+	color: #fff
+	overflow: hidden
+	p
+		margin: 0
+
+
+// winers
+.winners
+	padding: 50px 0 40px
+	background-color: #7fbc99
+	text-align: center
+	color: #fff
+	h2
+		margin: 0 auto 30px
+.winner__table
+	margin: 0 auto
+.table__td
+	padding: 5px 18px
+	margin: 0
+.table__td-img
+	position: relative
+	&:before
+		background-image: url("/img/")
+		position: absolute
+		content: ""
+		top: 0
+		left: -10px
+.winners__add
+	border-bottom: 1px solid #fff
+.winner
+	margin-bottom: 20px
+.trip
+	padding: 100px 0
+	text-align: center
+	h2
+		margin: 0 auto 20px
+		line-height: 34px
+		font-weight: 800
+	h3
+		margin: 0 auto 35px
+		font-size: 24px
+		font-weight: 800
+		line-height: 24px
+		text-transform: uppercase
+	p
+		font-size: 22px 
+		line-height: 32px
+		margin-bottom: 45px
+	.item__flex
+		.item
+			width: auto
+			max-width: 300px
+			&:nth-child(1)
+				padding: 0
+			&:nth-child(3)
+				padding: 0
+.item__text-w
+	width: 280px
+	padding: 10px 20px
+.item__flex-margin
+	margin-bottom: 110px
+.trip__surprise
+	display: flex
+	align-items: center
+	margin: 0 auto 25px
+	max-width: 750px
+	&:last-child
+		margin-bottom: 0
+.trip__surprise__img
+	width: 10%
+	margin-right: 15px
+.trip__surprise__text
+	font-size: 22px
+.trip__winner
+	display: flex
+	margin: 50px auto 100px
+	justify-content: center
+	align-items: center
+.trip__winner__img
+	margin-right: 40px
+	height: 185px
+.trip__winner__text
+	font-size: 22px
+	max-width: 480px
+
+
+.photo
+	text-align: center
+	background-color: #7fbc99
+	padding: 65px 0 50px
+	h2
+		margin: 0 auto 50px
+		color: #fff
+.photo-block
+	display: flex
+	flex-wrap: wrap
+.photo-item
+	height: 280px
+	width: 280px
+	margin-right: 15px
+	display: flex
+	text-align: center
+	justify-content: center
+	margin-bottom: 15px
+	&:last-child
+		margin-right: 0
+	img
+		width: 100%
+	
+
+///Footer
+.line
+	position: relative
+	&:after
+		right: 0
+		position: absolute
+		content: ''
+		width: 1px
+		background-color: #FFF
+		height: 75px
+		top: 50%
+		transform: translateY(-50%)
+
+
+.footer
+	padding-top: 30px
+	background-color: #eeece4
+.footer__block
+	display: flex
+	margin-bottom: 30px
+.footer__left
+	width: 23%
+	p
+		width: 100%
+		margin: 0 auto 10px
+		a
+			color: #000
+			border-bottom: 1px solid #000
+			line-height: 18px
+			&:link
+				color: #000
+				border-bottom: 1px solid #000
+				line-height: 18px
+			&:visited
+				color: #000
+				border-bottom: 1px solid #000
+				line-height: 18px
+.footer__middle
+	width: 54%
+	p
+		margin: 0 auto 20px
+		text-align: center
+.middle__block
+	display: flex
+	justify-content: center
+	aling-items: center
+	a
+		margin: 0 30px 0 60px
+		color: #000
+		line-height: 18px
+		&:link
+			color: #000
+			line-height: 18px
+		&:visited
+			color: #000
+			line-height: 18px
+.icon__before
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: -4px
+		left: -40px
+		height: 25px
+		width: 25px
+		background-image: url("/img/sprite-footer.png")
+		background-size: content
+	&:last-child
+		&:before
+			background-position: -25px 0
+.footer__right
+	width: 23%
+	text-align: center
+	p
+		margin: 0 auto 10px
+.footer__email
+	display: flex
+	justify-content: center
+	align-items: center
+	a
+		width: 26px
+		height: 27px
+		margin: 5px
+		background-image: url("/img/sprite-footer.png")
+		background-position: -50px 0
+		&:nth-child(2)
+			background-position: -77px 0
+		&:nth-child(3)
+			background-position: -104px 0
+.copyright
+	text-align: center
+	width: 100%
+	margin: 0px auto
+	line-height: 18px
+	padding: 8px 0
+	border-top: 1px solid #fff
+
+// promo__popup
+
+.promo_popup
+	position: fixed
+	background-color: #e4002b
+	width: 340px
+	height: 110px
+	bottom: 5%
+	left: -110%
+	transition: left 0.4s ease
+	color: #fff
+	font-size: 16px
+	padding: 15px
+	z-index: 4
+	box-shadow: -5px 5px 15px rgba(0,0,0,.4)
+	background-image: url("/img/popupfish.png")
+	background-repeat: no-repeat
+	background-position: 97% 25%
+	p
+		margin: 0 0 15px 0
+		line-height: 16px
+		&:last-child
+			font-size: 14px
+			margin-bottom: 10px
+			line-height: 14px
+	a
+		font-size: 14px
+		margin: 0
+		line-height: 14px
+		text-decoration: underline
+		&:link
+			text-decoration: underline
+.surprise__show
+	left: 0
+
+@import "media" // Всегда в конце
